@@ -40,23 +40,19 @@ nav {
 	width: 5em;
 	position: relative;
 	animation-name: magic;
-	animation-duration: 3s;
+	animation-duration: 5s;
 	animation-iteration-count: infinite;
 }
 @keyframes magic {
-	0% {
-		left: 10%;
-	}
 	20% {
-		left: 20%;
-		opacity: 0.75;
+		transform: rotate(-15deg);
 	}
 	40% {
-		left: 80%;
+		transform: rotate(20deg);
 		opacity: 0;
 	}
 	60% {
-		right: 10%;
+		transform: rotate(-20deg);
 		opacity: 0.
 	}
 }
