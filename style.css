@@ -38,7 +38,8 @@ nav {
 .logo {
 	height: 6em;
 	width: 5em;
-	position: relative;
+	float: right;
+	padding-right: 1em;
 	animation-name: magic;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
