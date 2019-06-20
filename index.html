@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	
+	<head>
+		
+		<title>The Pursuit of Intuition</title>
+
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="This is a social photo challenge game, designed to test your level of intuition.">
+		
+		<meta name="author" content="noony9">
+		
+		<link rel="stylesheet" href="style.css"/>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		
+		<!--meta name="mobile-web-app-capable" content="yes"/>-->
+		
+	
+	</head>
+	
+	<body> 
+		
+		<!--=====NAVIGATION=====-->
+		
+		<nav class="topnav" id="topNav">
+			
+			<a href="index.html" class="active">Home</a>
+			
+			<a href="pages/profile.html">Profile</a>
+			
+			<a href="pages/leaderboard.html">Leaderboard</a>
+			
+			<a href="pages/creation.html">Creation Zone</a>
+			
+			<a href="pages/forums.html">Forums</a>
+			
+			<a href="pages/about.html">About</a>
+			
+			<a href="javascript:void(0);" class="icon" onclick="mainNav()">
+				
+			<i class="fa fa-bars"></i>
+			
+			</a>
+			
+			<img class="logo" src="content/logo/noony9_logo.png" alt=LOGO>
+		
+		</nav>
+		
+		<!--=====HEADER=====-->
+		
+		<header>
+			
+			<h1 class="title">The Pursuit of Intuition</h1>
+
+			<div class="profilecard">
+				
+				<ul>
+
+					<li>
+<img class="avatar" src="content/images/blank-profile.png" alt="User's Avatar" style="font-size: 30px">
+</li>
+					
+					<li class="title">Title</li>
+					
+					<li class="rank">Ranking</li>
+					
+					<li class="incentives">Incentives</li>
+					
+					<a href="pages/profile.html">Profile Page</a>
+					
+				</ul>
+			
+			</div>
+		
+		</header>
+		
+		<!--=====MAIN CONTENT=====-->
+		
+		<main>
+			
+			<section class="photo-container">
+				
+				<div class="photo-challenge">
+					
+					<img class="photo1" src="content/images/challenge1.png" alt="Photo Challenge Item">
+
+					<img class="photo2" src="content/images/challenge2.png" alt="Photo Challenge Item">
+					
+					<img class="photo3" src="content/images/challenge3.png" alt="Photo Challenge Item">
+					
+					<img class="photo4" src="content/images/challenge4.png" alt="Photo Challenge Item">
+				
+				</div>
+			
+			</section>
+			
+			<section>
+				
+				<h2>Chat</h2>
+			
+			</section>
+			
+			<section>
+				
+				<h2>Sponsors</h2>
+			
+			</section>
+			
+			<section>
+				
+				<h2>News</h2>
+			
+			</section>
+		
+		</main>
+		
+		<!--=====FOOTER=====-->
+		
+		<footer>
+			
+			<h2>THIS IS THE FOOTER</h2>
+		
+		</footer>
+		
+		<!--=====SCRIPTS=====-->
+		
+		<script>
+			
+			function mainNav() {
+				
+				let x = document.getElementById("topNav");
+				
+					if (x.className === "topnav") {
+					
+					x.className += " responsive";
+				
+				}
+				
+				else {
+					
+					x.className = "topnav";
+				
+				}
+			
+			}
+		
+		</script>
+	
+	</body>
+
+</html>
