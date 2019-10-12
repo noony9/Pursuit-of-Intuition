@@ -6,11 +6,66 @@
 		<meta name="author" content="noony9">
 		<meta name="viewport" content="width=device-width, initial scale=1.0">
 		<link rel="stylesheet" href="../style.css"/>
-		<link rel="script" href="../script.js"/>
+		<script src="script.js"></script>
 	</head>
-	<body>
+	<body id="page2">
 		<!--=====NAVIGATION=====-->
-		
-		<h1>USER PROFILE STUFF<h1>
+		<nav class="topnav" id="topNav">
+			<a href="../index.html">Home</a>
+			<a href="leaderboard.htl">Leaderboard</a>
+			<a href="creation.html">Creation Zone</a>
+			<a href="forums.html">Forums</a>
+			<a href="about.html">About</a>
+			<a href="javascript:void(0);" class="icon" onclick="mainNav()">
+				<i class="fa fa-bars"></i>
+			</a>
+			<img class="logo" src="../content/images/noony9_logo.png" alt=LOGO>
+		</nav>
+		<!--=====HEADER=====-->
+		<header>
+			<h1 class="title">User Profile</h1>
+			<div class="profilecard">
+				<ul>
+					<li>
+						<img class="avatar" src="../content/images/blank-profile.png" alt="User's Avatar" style="font-size: 30px">
+					</li> <!--FIXME: ADD FUNCTIONALITY TO LINK USER'S UPLOADED PHOTO-->
+					<li class="title">Title</li> <!--FIXME: ADD FUNCTIONALITY TO DISPLAY COMPUTED TITLE-->
+					<li class="rank">Ranking</li> <!--FIXME: ADD FUNCTIONALITY TO DISPLAY COMPUTED RANKING-->
+					<li class="incentives">Incentives</li> <!--FIXME: ADD FUNCTIONALITY TO DISPLAY COMPUTED INCENTIVES-->
+					<li class="refreshProfile">Refresh</li> <!--FIXME: ADD FUNCTIONALITY TO UPDATE PROFILE WHEN USER CLICKS IF ENTERS NEW INFORMATION IN CUSTOMIZE PROFILE AND SAVES-->
+				</ul>
+			</div>
+		</header>
+		<main>
+			<h2>Customize User Profile</h2>
+			<div class="profileWindow">
+				<section>
+					<form method="GET">
+						Famous Quote: <input type="text" name="famous_quote" default="Famous Quote!" maxlength=100><br>
+						First Name: <input type="text" name="first_name" maxlength = 20><br>
+						Last Name: <input type="text" name="last_name" maxlength = 20><br>
+						Email: <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+						Birthday: <input type="date" name="birthday" pattern="date"><br>
+						About You: <input type="text" name="aboutyou" default="All about me!!" maxlength=1000><br>
+						Gender: <br>
+								<input type="radio" name="gender" value="male">Male<br>
+								<input type="radio" name="gender" value="female">Female<br>
+								<input type="radio" name="gender" value="other">Other<br>
+						Tips & Strategies: <input type="text" name="tips&strategies" default="Any advice for other users?" maxlength=1000><br>
+						<input type="submit" value="Update Profile">
+						<input type="reset" value="Reset Profile"><br>
+					</form>
+				</section>
+			</div>
+			<div class="creations"><!--FIXME:: ADD FUNCTIONALITY TO POPULATE USER CREATIONS FOR DISPLAY--></div>
+				<section>
+					<h2>CREATIONS WINDOW</h2>
+					<p>Create a window around me</p>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<h1>ADVERTISEMENTS</h1>
+		</footer>
 	</body>
 </html>

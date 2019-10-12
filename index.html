@@ -8,7 +8,8 @@
 		<meta name="author" content="noony9">
 		<link rel="stylesheet" href="style.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-		<!--meta name="mobile-web-app-capable" content="yes"/>-->
+		<meta name="mobile-web-app-capable" content="yes"/>
+		<script src="script.js"></script>
 	</head>
 	<body> 
 		<!--=====NAVIGATION=====-->
@@ -31,10 +32,10 @@
 				<ul>
 					<li>
 					<img class="avatar" src="content/images/blank-profile.png" alt="User's Avatar" style="font-size: 30px">
-					</li>
-					<li class="title">Title</li>
-					<li class="rank">Ranking</li>
-					<li class="incentives">Incentives</li>
+					</li> <!--FIXME: ADD FUNCTIONALITY TO LINK USER'S UPLOADED PHOTO-->
+					<li class="title">Title</li> <!--FIXME: ADD FUNCTIONALITY TO DISPLAY COMPUTED TITLE-->
+					<li class="rank">Ranking</li> <!--FIXME: ADD FUNCTIONALITY TO DISPLAY COMPUTED RANKING-->
+					<li class="incentives">Incentives</li> <!--FIXME: ADD FUNCTIONALITY TO DISPLAY COMPUTED INCENTIVES-->
 					<a href="pages/profile.html">Profile Page</a>
 					<!--FIXME: Pages need a basic build & functionality-->
 				</ul>
@@ -68,17 +69,5 @@
 		<footer>
 			<h2>THIS IS THE FOOTER</h2>
 		</footer>
-		<!--=====SCRIPTS=====-->
-		<script>
-			function mainNav() {
-				let x = document.getElementById("topNav");
-					if (x.className === "topnav") {
-					x.className += "responsive";
-				}
-				else {
-					x.className = "topnav";
-				}
-			}
-		</script>
 	</body>
 </html>
